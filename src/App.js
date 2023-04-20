@@ -6,7 +6,7 @@ function App() {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    setHeight(document.body.clientHeight)
+    setHeight(document.body.clientHeight);    
   }, [])
 
 

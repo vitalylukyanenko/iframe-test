@@ -41,8 +41,9 @@
     -->
     <script>
       window.onload = function() {
-        console.log('detect height', document.body.clientHeight);
-        window.postMessage(document.body.clientHeight, '*');
+        console.log('detect height', document.body.clientHeight); 
+        console.log('detect parent', parent);
+        parent.postMessage(document.body.clientHeight, '*');
       }
     </script>
   </body>
